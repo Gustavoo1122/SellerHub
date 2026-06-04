@@ -1,0 +1,40 @@
+.newProductContainer{
+    padding: 1.5rem 1rem;
+}
+
+.newProductContainer h3{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.newProductContainer .inputQuantity{
+    width: 70px;
+}
+
+.newProductContainer .inputCoin{
+    width: 140px;
+}
+
+.divButton{
+    display: flex;
+    justify-content: center;
+}
+
+.divButton .inputButton{
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: .5rem;
+    margin-top: 2rem;
+}
+
+.divButton .inputButton:hover{
+    background-color: #c3c3c3;
+}
+
+@media (min-width: 768px){
+    .newProductContainer{
+        max-width: 768px;
+        margin: auto;
+    }
+}

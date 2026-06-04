@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Financeiro() {
+export default function Finances() {
   return (
     <div>Financeiro</div>
   )

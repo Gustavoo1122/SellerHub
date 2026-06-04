@@ -1,0 +1,13 @@
+.homeContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    height: 100%;
+    gap: 10px;
+}
+
+.homeItens{
+    border: solid 1px #000;
+    border-radius: 10px;
+    padding: .75rem;
+}
