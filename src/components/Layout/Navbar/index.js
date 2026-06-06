@@ -20,8 +20,8 @@ export default function Navbar() {
         </button>
         <ul className={menu ? `${styles.navList} ${styles.navListOpen}` : styles.navList} >
             <li><Link to="/" className={styles.itemList} onClick={() => setMenu(false)}>Home</Link></li>
-            <li><Link to="/estoque" className={styles.itemList} onClick={() => setMenu(false)}>Estoque</Link></li>
-            <li><Link to="/financeiro" className={styles.itemList} onClick={() => setMenu(false)}>Financeiro</Link></li>
+            <li><Link to="/products" className={styles.itemList} onClick={() => setMenu(false)}>Produtos</Link></li>
+            <li><Link to="/Finances" className={styles.itemList} onClick={() => setMenu(false)}>Financeiro</Link></li>
         </ul>
       </nav>
     </header>
