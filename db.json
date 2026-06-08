@@ -1,0 +1,119 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome_produto": "Forma Silicone",
+      "sku": "UT-C-0001",
+      "categoria": "Utilidade",
+      "quantidade": 10,
+      "preco_custo": 4,
+      "preco_venda": 8
+    },
+    {
+      "id": "2",
+      "nome_produto": "Mini seladora",
+      "sku": "UT-C-0002",
+      "categoria": "Utilidade",
+      "quantidade": 5,
+      "preco_custo": 8,
+      "preco_venda": 14
+    },
+    {
+      "id": "3",
+      "nome_produto": "Pote hermético",
+      "sku": "UT-C-0003",
+      "categoria": "Utilidade",
+      "quantidade": 7,
+      "preco_custo": 10,
+      "preco_venda": 22
+    },
+    {
+      "id": "4",
+      "nome_produto": "Lampada LED",
+      "sku": "DE-Q-0001",
+      "categoria": "Decoração",
+      "quantidade": 5,
+      "preco_custo": 8,
+      "preco_venda": 14
+    },
+    {
+      "nome_produto": "Produto Teste",
+      "sku": "TESTE10",
+      "categoria": "Decoração",
+      "quantidade": "10",
+      "preco_custo": "100",
+      "preco_venda": "500",
+      "id": "hfRkjeJ00PU"
+    },
+    {
+      "nome_produto": "Teste 02",
+      "sku": "TESTE20",
+      "categoria": "Utilidades",
+      "quantidade": "1",
+      "preco_custo": "10",
+      "preco_venda": "20",
+      "id": "0DSHHB4n8xs"
+    },
+    {
+      "nome_produto": "TESTE 03",
+      "sku": "TESTE303030",
+      "categoria": "Banheiro",
+      "quantidade": "2",
+      "preco_custo": "55",
+      "preco_venda": "70",
+      "id": "BxB4U-v_6Mw"
+    },
+    {
+      "nome_produto": "TESTEEEEE",
+      "sku": "TST34353",
+      "categoria": "Presentes",
+      "quantidade": "103",
+      "preco_custo": "89.90",
+      "preco_venda": "180",
+      "id": "jLvNsUxDwMw"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nome_categoria": "Decoração"
+    },
+    {
+      "id": "2",
+      "nome_categoria": "Utilidades"
+    },
+    {
+      "id": "3",
+      "nome_categoria": "Cozinha"
+    },
+    {
+      "id": "4",
+      "nome_categoria": "Organização"
+    },
+    {
+      "id": "5",
+      "nome_categoria": "Banheiro"
+    },
+    {
+      "id": "6",
+      "nome_categoria": "Quarto"
+    },
+    {
+      "id": "7",
+      "nome_categoria": "Jardim"
+    },
+    {
+      "id": "8",
+      "nome_categoria": "Iluminação"
+    },
+    {
+      "id": "9",
+      "nome_categoria": "Presentes"
+    },
+    {
+      "id": "10",
+      "nome_categoria": "Outros"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
