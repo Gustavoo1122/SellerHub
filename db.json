@@ -4,7 +4,7 @@
       "id": "1",
       "nome_produto": "Forma Silicone",
       "sku": "UT-C-0001",
-      "categoria": "Utilidade",
+      "categoria": "Utilidades",
       "quantidade": 10,
       "preco_custo": 4,
       "preco_venda": 8
@@ -13,7 +13,7 @@
       "id": "2",
       "nome_produto": "Mini seladora",
       "sku": "UT-C-0002",
-      "categoria": "Utilidade",
+      "categoria": "Utilidades",
       "quantidade": 5,
       "preco_custo": 8,
       "preco_venda": 14
@@ -22,7 +22,7 @@
       "id": "3",
       "nome_produto": "Pote hermético",
       "sku": "UT-C-0003",
-      "categoria": "Utilidade",
+      "categoria": "Utilidades",
       "quantidade": 7,
       "preco_custo": 10,
       "preco_venda": 22
@@ -71,48 +71,67 @@
       "preco_custo": "89.90",
       "preco_venda": "180",
       "id": "jLvNsUxDwMw"
+    },
+    {
+      "nome_produto": "Testando nome de produto grande",
+      "sku": "TESTE3043532",
+      "categoria": "Iluminação",
+      "quantidade": "1",
+      "preco_custo": "30",
+      "preco_venda": "100",
+      "id": "djWAD4CoC7Q"
     }
   ],
   "categorias": [
     {
       "id": "1",
-      "nome_categoria": "Decoração"
+      "nome_categoria": "Decoração",
+      "slug": "decoracao"
     },
     {
       "id": "2",
-      "nome_categoria": "Utilidades"
+      "nome_categoria": "Utilidades",
+      "slug": "utilidades"
     },
     {
       "id": "3",
-      "nome_categoria": "Cozinha"
+      "nome_categoria": "Cozinha",
+      "slug": "cozinha"
     },
     {
       "id": "4",
-      "nome_categoria": "Organização"
+      "nome_categoria": "Organização",
+      "slug": "organizacao"
     },
     {
       "id": "5",
-      "nome_categoria": "Banheiro"
+      "nome_categoria": "Banheiro",
+      "slug": "banheiro"
     },
     {
       "id": "6",
-      "nome_categoria": "Quarto"
+      "nome_categoria": "Quarto",
+      "slug": "quarto"
     },
     {
       "id": "7",
-      "nome_categoria": "Jardim"
+      "nome_categoria": "Jardim",
+      "slug": "jardim"
     },
     {
       "id": "8",
-      "nome_categoria": "Iluminação"
+      "nome_categoria": "Iluminação",
+      "slug": "iluminacao"
     },
     {
       "id": "9",
-      "nome_categoria": "Presentes"
+      "nome_categoria": "Presentes",
+      "slug": "presentes"
     },
     {
       "id": "10",
-      "nome_categoria": "Outros"
+      "nome_categoria": "Outros",
+      "slug": "outros"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

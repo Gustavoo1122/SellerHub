@@ -1,32 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import LinkButton from '../../Layout/LinkButton'
-import { getProducts } from '../../../services/produtcsServices'
 import styles from './Products.module.css'
+import ListItens from '../../Layout/ListItens/ListItens'
 
 export default function Products() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    async function requestProducts(){
-      try{
-        const data = await getProducts();
-        setProducts(data);
-      }
-      catch(error){
-        console.error(error);
-      }
-    }
-    requestProducts()
-
-  }, [])
-
   return (
     <div className={styles.productContainer}>
-      <div>Produtos</div>
-      <ul>
-        {products.map((product) => <li key={product.id}>{product.nome_produto}</li>)}
-      </ul>
-      <LinkButton to='/newProduct' text="Cadastrar Produto"/>
+      <div className={styles.productsHeader}>
+        <h2>Produtos</h2>
+        <LinkButton to='/newProduct' text="Cadastrar Produto" className={styles.btnCreateProduct}/>
+      </div>
+      <div className={styles.productsList}>
+        <ListItens />        
+      </div>
     </div>
   )
 }

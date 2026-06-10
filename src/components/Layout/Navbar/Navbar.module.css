@@ -51,15 +51,26 @@
     background-color: #efefef;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     .header{
         display: flex;
         justify-content: center;
+        margin-bottom: 20px;
     }
 
     .navBar{
         width: 1024px;
 
+    }
+}
+
+@media (min-width: 2000px) {
+    .header{
+        margin-bottom: 30px;
+    }
+
+    .navBar{
+        width: 2000px;
     }
 }
 

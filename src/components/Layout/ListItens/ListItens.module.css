@@ -1,0 +1,119 @@
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: auto;
+    gap: 1rem;
+}
+
+.itemList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border: none;
+    height: auto;
+    width: 100%;
+    border-radius: .5rem;
+    list-style: none;
+    padding: .5rem 1rem .5rem .5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+.itemList .itemInfo{
+    width: 100%;
+}
+
+.headerInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px #b4b4b4;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.itemName{
+    width: auto;
+    font-weight: bold;
+    color: #272727;
+}
+
+.itemQuantity{
+    font-weight: bold;
+}
+
+.bodyInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.itemInfo .categories{
+    color: #fff;
+    padding: .25rem .4rem;
+    border-radius: .3rem;
+    font-size: 13px;
+    font-weight: bold;
+    width: fit-content;
+    margin-top: .5rem;
+}
+
+.itemList .itemButtons{
+    display: flex;
+    align-items: center;
+}
+
+.itemButtons Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: #fff;
+    border: solid 1.5px #efefef;
+    border-radius: .7rem;
+    height: 40px;
+    width: 40px;
+    margin-left: .3rem;
+}
+
+.iconDeleteButton{
+    width: 20px;
+    height: 20px;
+}
+
+.deleteButton:hover{
+    background-color: #ffc0c0;
+    color: #EF4444;
+    cursor: pointer;
+}
+
+.iconEditButton{
+    width: 20px;
+    height: 20px;
+}
+
+.editButton:hover{
+    background-color: #c0c9ff;
+    color: #2352ec;
+    cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+    .bodyInfo{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 2000px) {
+    .list{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 390px) {
+    .bodyInfo{
+        flex-direction: column;
+    }
+}
