@@ -49,15 +49,16 @@ export default function NewProductForm() {
     e.preventDefault();
 
     try{
+    
     await createProducts(product);
-    navigate('/products');
+    navigate('/products', {state: {message: 'Produto cadastrado com sucesso!'}});
 
     }
     catch(error){
         console.error(error);
     }
   }
-
+ 
   return (
     <>
         <form onSubmit={handleSubmit}>

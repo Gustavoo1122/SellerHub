@@ -80,6 +80,60 @@
       "preco_custo": "30",
       "preco_venda": "100",
       "id": "djWAD4CoC7Q"
+    },
+    {
+      "nome_produto": "Colher de silicone",
+      "sku": "CU0001",
+      "categoria": "Cozinha",
+      "quantidade": "10",
+      "preco_custo": "3",
+      "preco_venda": "8",
+      "id": "cagFIcTsqpQ"
+    },
+    {
+      "nome_produto": "teste",
+      "sku": "TESTE303030",
+      "categoria": "Quarto",
+      "quantidade": "1",
+      "preco_custo": "1",
+      "preco_venda": "5",
+      "id": "73tf6etdpl8"
+    },
+    {
+      "nome_produto": "Teste flash message",
+      "sku": "FLM123",
+      "categoria": "Jardim",
+      "quantidade": "55",
+      "preco_custo": "100",
+      "preco_venda": "350",
+      "id": "8TAMDXfJHNI"
+    },
+    {
+      "nome_produto": "Teste flash message 2",
+      "sku": "UFRNE2342",
+      "categoria": "Cozinha",
+      "quantidade": "1",
+      "preco_custo": "1",
+      "preco_venda": "2",
+      "id": "ynx2p8f2VOc"
+    },
+    {
+      "nome_produto": "aaaa",
+      "sku": "3423",
+      "categoria": "Cozinha",
+      "quantidade": "1",
+      "preco_custo": "4",
+      "preco_venda": "6",
+      "id": "Nod4LYU32Gk"
+    },
+    {
+      "nome_produto": "Gustavo",
+      "sku": "TESTE303030",
+      "categoria": "Outros",
+      "quantidade": "4",
+      "preco_custo": "25",
+      "preco_venda": "500",
+      "id": "hMHXeMMQvMA"
     }
   ],
   "categorias": [
