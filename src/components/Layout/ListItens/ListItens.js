@@ -8,30 +8,27 @@ import Barcode from './Barcode/Barcode.js';
 import Price from './Price/Price.js';
 import { Link } from 'react-router-dom';
 
-export default function ListItens({products}) {
+export default function ListItens({id, sku, categoria, quantidade, nome_produto, preco_custo, preco_venda, handleRemove}) {
   return (
-    <ul className={styles.list}>
-          {products.map((product) => 
-            <li key={product.id} className={styles.itemList} style={{borderLeft: `6px solid ${getCategoryColor(product.categoria)}`}}>
+            <li key={id} className={styles.itemList} style={{borderLeft: `6px solid ${getCategoryColor(categoria)}`}}>
               <div className={styles.itemInfo}>
                 <div className={styles.headerInfo}>
                     <div>
-                      <p className={styles.itemName}>{product.nome_produto}</p>
-                      <p className={styles.categories} style={{backgroundColor: getCategoryColor(product.categoria)}}>{product.categoria}</p>
+                      <p className={styles.itemName}>{nome_produto}</p>
+                      <p className={styles.categories} style={{backgroundColor: getCategoryColor(categoria)}}>{categoria}</p>
                     </div>
                     
                     <div className={styles.itemButtons}>
                         <Link to="/" className={styles.editButton}><FaEdit className={styles.iconEditButton} /></Link>
-                        <Button text={<MdDelete className={styles.iconDeleteButton} />} className={styles.deleteButton} /> 
+                        <Button onClick ={() => handleRemove(id)} text={<MdDelete className={styles.iconDeleteButton} />} className={styles.deleteButton} /> 
                     </div>
                 </div>
                 <div className={styles.bodyInfo}>
-                    <Barcode product={product} />
-                    <Stock product={product} />
-                    <Price product={product}/>
+                    <Barcode product={sku} />
+                    <Stock quantidade={quantidade} />
+                    <Price preco_custo={preco_custo} quantidade={quantidade}/>
                 </div>  
               </div>   
-            </li>)}
-    </ul>
+            </li>
   )
 }

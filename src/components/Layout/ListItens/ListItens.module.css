@@ -1,10 +1,3 @@
-.list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-auto-rows: auto;
-    gap: 1rem;
-}
-
 .itemList{
     display: flex;
     flex-direction: row;

@@ -2,10 +2,10 @@ import React from 'react'
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import styles from './Price.module.css'
 
-export default function Price({product, className}) {
-  const valorUni = product.preco_custo;
-  const quantidade = product.quantidade;
-  const valorTotal = valorUni * quantidade;
+export default function Price({preco_custo, quantidade, className}) {
+  const valorUni = preco_custo;
+  const qtd = quantidade;
+  const valorTotal = valorUni * qtd;
   return (
     <div className={styles.priceDiv}>
         <AiOutlineDollarCircle className={styles.priceIcon}/>

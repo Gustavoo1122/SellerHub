@@ -22,6 +22,12 @@ export async function updateProducts(){
 
 }
 
-export async function deleteProducts(){
-
+export async function deleteProducts(id){
+    await fetch(`${urlProducts}/${id}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }
+    )
 }
