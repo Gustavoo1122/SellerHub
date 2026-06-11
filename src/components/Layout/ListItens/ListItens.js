@@ -1,32 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import { getProducts } from '../../../services/produtcsServices'
 import styles from './ListItens.module.css'
 import Button from '../Button'
-
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { getCategoryColor } from '../../../utils/categoryColors.js'
 import Stock from './Stock/Stock.js';
 import Barcode from './Barcode/Barcode.js';
 import Price from './Price/Price.js';
+import { Link } from 'react-router-dom';
 
-export default function ListItens() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    async function requestProducts(){
-      try{
-        const data = await getProducts();
-        setProducts(data);
-      }
-      catch(error){
-        console.error(error);
-      }
-    }
-    requestProducts()
-
-  }, [])
-
+export default function ListItens({products}) {
   return (
     <ul className={styles.list}>
           {products.map((product) => 
@@ -39,7 +21,7 @@ export default function ListItens() {
                     </div>
                     
                     <div className={styles.itemButtons}>
-                        <Button text={<FaEdit className={styles.iconEditButton} />} className={styles.editButton} />
+                        <Link to="/" className={styles.editButton}><FaEdit className={styles.iconEditButton} /></Link>
                         <Button text={<MdDelete className={styles.iconDeleteButton} />} className={styles.deleteButton} /> 
                     </div>
                 </div>

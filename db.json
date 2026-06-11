@@ -134,6 +134,24 @@
       "preco_custo": "25",
       "preco_venda": "500",
       "id": "hMHXeMMQvMA"
+    },
+    {
+      "nome_produto": "Julia",
+      "sku": "TST34353",
+      "categoria": "Cozinha",
+      "quantidade": "6",
+      "preco_custo": "100",
+      "preco_venda": "600",
+      "id": "L4SwC9zzoCA"
+    },
+    {
+      "nome_produto": "Balança de cozinha 10kg",
+      "sku": "CTU0231",
+      "categoria": "Utilidades",
+      "quantidade": "10",
+      "preco_custo": "10",
+      "preco_venda": "18",
+      "id": "zjfjH9CZm5k"
     }
   ],
   "categorias": [
