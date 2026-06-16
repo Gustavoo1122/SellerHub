@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Input from '../Input'
 import SelectInput from '../SelectInput'
-import styles from './NewProdForm.module.css'
+import styles from './ProductForm.module.css'
 
 import { getCategories } from '../../../services/categoriesService'
-import { createProducts } from '../../../services/produtcsServices'
-import { useNavigate } from 'react-router-dom'
 
-export default function NewProductForm() {
-  const navigate = useNavigate();
+export default function NewProductForm({ productData, disabled, buttonText, handleSubmitProduct }) {
   const [categories, setCategories]  = useState([]);
 
   const initialProduct = {
@@ -19,7 +16,7 @@ export default function NewProductForm() {
     preco_custo: 0,
     preco_venda: 0
   }
-  const [product, setProduct] = useState(initialProduct);
+  const [product, setProduct] = useState(productData || initialProduct);
 
   useEffect(() => {
     async function requestCategories(){
@@ -35,6 +32,11 @@ export default function NewProductForm() {
 
   }, []);
 
+  useEffect(() => {
+    if(disabled && productData) 
+        setProduct(productData);
+  }, [disabled, productData])
+
   function handleChange(e){
     const field = e.target.name;
     const value = e.target.value
@@ -48,17 +50,9 @@ export default function NewProductForm() {
   async function handleSubmit(e){
     e.preventDefault();
 
-    try{
-    
-    await createProducts(product);
-    navigate('/products', {state: {message: 'Produto cadastrado com sucesso!'}});
-
-    }
-    catch(error){
-        console.error(error);
-    }
+    handleSubmitProduct(product);
   }
- 
+
   return (
     <>
         <form onSubmit={handleSubmit}>
@@ -67,39 +61,46 @@ export default function NewProductForm() {
                 name="nome_produto" 
                 placeholder="Nome do produto" 
                 value={product.nome_produto}
-                handleOnChange={handleChange}/>
+                handleOnChange={handleChange}
+                disabled={disabled}
+                />
             <Input type="text" 
                 text="SKU" name="sku" 
                 placeholder="Código SKU" 
                 value={product.sku} 
-                handleOnChange={handleChange}/>
+                handleOnChange={handleChange}
+                disabled={disabled}/>
             <SelectInput name="categoria" 
                 text="Categoria" 
                 options={categories} 
                 value={product.categoria} 
-                handleOnChange={handleChange}/>
+                handleOnChange={handleChange}
+                disabled={disabled}/>
             <Input type="number" 
                 text="Quantidade" 
                 name="quantidade" 
                 className={styles.inputQuantity} 
                 value={product.quantidade}
-                handleOnChange={handleChange}/>
+                handleOnChange={handleChange}
+                disabled={disabled}/>
             <Input type="number" 
                 text="Preço custo" 
                 name="preco_custo" 
                 placeholder="Custo individual" 
                 className={styles.inputCoin}
                 value={product.preco_custo}
-                handleOnChange={handleChange}/>
+                handleOnChange={handleChange}
+                disabled={disabled}/>
             <Input type="number" 
                 text="Preço Venda" 
                 name="preco_venda" 
                 placeholder="Valor de venda" 
                 className={styles.inputCoin} 
                 value={product.preco_venda}
-                handleOnChange={handleChange}/>
+                handleOnChange={handleChange}
+                disabled={disabled}/>
             <div className={styles.divButton}>
-                <input type="submit" value="Cadastrar" className={styles.inputButton}/>
+                <input type="submit" value={buttonText} className={styles.inputButton} disabled={disabled}/>
             </div>
         </form>
     </>

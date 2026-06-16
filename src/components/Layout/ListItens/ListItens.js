@@ -19,7 +19,7 @@ export default function ListItens({id, sku, categoria, quantidade, nome_produto,
                     </div>
                     
                     <div className={styles.itemButtons}>
-                        <Link to="/" className={styles.editButton}><FaEdit className={styles.iconEditButton} /></Link>
+                        <Link to={`/product/${id}`} className={styles.editButton}><FaEdit className={styles.iconEditButton} /></Link>
                         <Button onClick ={() => handleRemove(id)} text={<MdDelete className={styles.iconDeleteButton} />} className={styles.deleteButton} /> 
                     </div>
                 </div>

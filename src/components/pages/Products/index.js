@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
+
 import { getProducts, deleteProducts } from '../../../services/produtcsServices'
 import LinkButton from '../../Layout/LinkButton'
 import styles from './Products.module.css'
 import ListItens from '../../Layout/ListItens/ListItens'
 import Message from '../../Layout/Message'
-import { useLocation } from 'react-router-dom'
+
 import Loading from '../../Layout/Loading'
 
 export default function Products() {
@@ -13,7 +15,7 @@ export default function Products() {
   const [productMessage, setProductMessage] = useState('');
 
   const location = useLocation();
-  let message = '';
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function requestProducts(){
@@ -44,17 +46,23 @@ export default function Products() {
     }
   }
 
-  if(location.state){
-    message = location.state.message
-  }
+  useEffect(() => {
+    if(location.state?.message){
+      setProductMessage(location.state.message);
+
+      navigate(location.pathname, {
+        replace: true,
+        state: null
+      });
+    }
+  }, [location.state, location.pathname, navigate])
 
   return (
-    <div className={styles.productContainer}>
+    <div className={styles.productsContainer}>
       <div className={styles.productsHeader}>
         <h2>Produtos</h2>
         <LinkButton to='/newProduct' text="Cadastrar Produto" className={styles.btnCreateProduct}/>
       </div>
-      {message && <Message message={message} type="success"/>}
       {productMessage && <Message message={productMessage} type="success"/>}
       {products.length > 0 &&
         <div className={styles.productsList}>

@@ -11,5 +11,5 @@
 .form input {
     padding: .7rem;
     border-radius: .5rem;
-    border: none;
+    border: 1px solid #b4b4b4;
 }

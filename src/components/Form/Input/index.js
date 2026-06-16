@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Input.module.css'
 
-export default function Input({type, text, name, placeholder, handleOnChange, value, className}) {
+export default function Input({type, text, name, placeholder, handleOnChange, value, className, disabled}) {
   return (
     <div className={styles.form}>
         <label htmlFor={name}>{text}:</label>
@@ -11,7 +11,8 @@ export default function Input({type, text, name, placeholder, handleOnChange, va
                id={name}
                placeholder={placeholder} 
                onChange={handleOnChange} 
-               className={className}/>
+               className={className}
+               disabled={disabled}/>
     </div>
   )
 }

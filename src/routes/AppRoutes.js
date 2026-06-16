@@ -4,6 +4,7 @@ import Home from "../components/pages/Home";
 import Products from "../components/pages/Products";
 import Finances from "../components/pages/Finances";
 import NewProduct from "../components/pages/NewProduct";
+import Product from "../components/pages/Product";
 
 import Navbar from "../components/Layout/Navbar";
 import Container from "../components/Layout/Container";
@@ -22,6 +23,7 @@ export default function AppRoutes() {
                   <Route path="/products" element={<Products />} />
                   <Route path="/finances" element={<Finances />} />
                   <Route path="/newProduct" element={<NewProduct />} />
+                  <Route path="/product/:id" element={<Product />} />
               </Routes>
           </Container>
         </main>

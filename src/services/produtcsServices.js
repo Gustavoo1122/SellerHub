@@ -8,6 +8,12 @@ export async function getProducts(){
     return response.json()
 }
 
+export async function getProduct(id){
+    const response = await fetch(`${urlProducts}/${id}`);
+
+    return response.json()
+}
+
 export async function createProducts(product){
     await fetch(urlProducts, {
         method: 'POST',
@@ -18,8 +24,14 @@ export async function createProducts(product){
     })
 }
 
-export async function updateProducts(){
-
+export async function updateProducts(id, product){
+    await fetch (`${urlProducts}/${id}`,{
+        method: 'PUT',
+        headers: {
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify(product)
+    })
 }
 
 export async function deleteProducts(id){

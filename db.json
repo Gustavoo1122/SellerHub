@@ -10,20 +10,11 @@
       "preco_venda": 8
     },
     {
-      "id": "3",
-      "nome_produto": "Pote hermético",
-      "sku": "UT-C-0003",
-      "categoria": "Utilidades",
-      "quantidade": 7,
-      "preco_custo": 10,
-      "preco_venda": 22
-    },
-    {
       "id": "4",
-      "nome_produto": "Lampada LED",
+      "nome_produto": "Lampada LED 2",
       "sku": "DE-Q-0001",
       "categoria": "Decoração",
-      "quantidade": 5,
+      "quantidade": "15",
       "preco_custo": 8,
       "preco_venda": 14
     },
@@ -62,6 +53,60 @@
       "preco_custo": "10",
       "preco_venda": "18",
       "id": "zjfjH9CZm5k"
+    },
+    {
+      "nome_produto": "Gustavo Teste",
+      "sku": "werg432",
+      "categoria": "Presentes",
+      "quantidade": "5",
+      "preco_custo": "47",
+      "preco_venda": "190",
+      "id": "ZUmUrGOmINM"
+    },
+    {
+      "id": "FJcWX-2b0vI",
+      "nome_produto": "Lampada LED",
+      "sku": "DE-Q-0001",
+      "categoria": "Decoração",
+      "quantidade": 5,
+      "preco_custo": 8,
+      "preco_venda": 14
+    },
+    {
+      "id": "6QiEMobBaNU",
+      "nome_produto": "Lampada LED2323",
+      "sku": "DE-Q-0001",
+      "categoria": "Decoração",
+      "quantidade": 5,
+      "preco_custo": 8,
+      "preco_venda": 14
+    },
+    {
+      "nome_produto": "Kit galheteiro de azeite",
+      "sku": "KTCU0001",
+      "categoria": "Utilidades",
+      "quantidade": "2",
+      "preco_custo": "12.96",
+      "preco_venda": "28",
+      "id": "IKjJmzL7Kdg"
+    },
+    {
+      "nome_produto": "Produto teste 342324",
+      "sku": "345",
+      "categoria": "Presentes",
+      "quantidade": "31",
+      "preco_custo": "87",
+      "preco_venda": "100",
+      "id": "3beZhUz4kRg"
+    },
+    {
+      "nome_produto": "Gustavo e Julia",
+      "sku": "<3",
+      "categoria": "Outros",
+      "quantidade": "5",
+      "preco_custo": "5000",
+      "preco_venda": "9000",
+      "id": "G7b4TJpTFHg"
     }
   ],
   "categorias": [
