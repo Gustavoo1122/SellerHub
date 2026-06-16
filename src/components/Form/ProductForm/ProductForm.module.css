@@ -1,0 +1,27 @@
+.inputQuantity{
+    width: 70px;
+}
+
+.inputCoin{
+    width: 140px;
+}
+
+.divButton{
+    display: flex;
+    justify-content: center;
+}
+
+.divButton .inputButton{
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.divButton .inputButton:hover{
+    background-color: #c3c3c3;
+    cursor: pointer;
+}

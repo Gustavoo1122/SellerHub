@@ -1,0 +1,165 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome_produto": "Forma Silicone",
+      "sku": "UT-C-0001",
+      "categoria": "Utilidades",
+      "quantidade": 10,
+      "preco_custo": 4,
+      "preco_venda": 8
+    },
+    {
+      "id": "4",
+      "nome_produto": "Lampada LED 2",
+      "sku": "DE-Q-0001",
+      "categoria": "Decoração",
+      "quantidade": "15",
+      "preco_custo": 8,
+      "preco_venda": 14
+    },
+    {
+      "nome_produto": "Produto Teste",
+      "sku": "TESTE10",
+      "categoria": "Decoração",
+      "quantidade": "10",
+      "preco_custo": "100",
+      "preco_venda": "500",
+      "id": "hfRkjeJ00PU"
+    },
+    {
+      "nome_produto": "Testando nome de produto grande",
+      "sku": "TESTE3043532",
+      "categoria": "Iluminação",
+      "quantidade": "1",
+      "preco_custo": "30",
+      "preco_venda": "100",
+      "id": "djWAD4CoC7Q"
+    },
+    {
+      "nome_produto": "Colher de silicone",
+      "sku": "CU0001",
+      "categoria": "Cozinha",
+      "quantidade": "10",
+      "preco_custo": "3",
+      "preco_venda": "8",
+      "id": "cagFIcTsqpQ"
+    },
+    {
+      "nome_produto": "Balança de cozinha 10kg",
+      "sku": "CTU0231",
+      "categoria": "Utilidades",
+      "quantidade": "10",
+      "preco_custo": "10",
+      "preco_venda": "18",
+      "id": "zjfjH9CZm5k"
+    },
+    {
+      "nome_produto": "Gustavo Teste",
+      "sku": "werg432",
+      "categoria": "Presentes",
+      "quantidade": "5",
+      "preco_custo": "47",
+      "preco_venda": "190",
+      "id": "ZUmUrGOmINM"
+    },
+    {
+      "id": "FJcWX-2b0vI",
+      "nome_produto": "Lampada LED",
+      "sku": "DE-Q-0001",
+      "categoria": "Decoração",
+      "quantidade": 5,
+      "preco_custo": 8,
+      "preco_venda": 14
+    },
+    {
+      "id": "6QiEMobBaNU",
+      "nome_produto": "Lampada LED2323",
+      "sku": "DE-Q-0001",
+      "categoria": "Decoração",
+      "quantidade": 5,
+      "preco_custo": 8,
+      "preco_venda": 14
+    },
+    {
+      "nome_produto": "Kit galheteiro de azeite",
+      "sku": "KTCU0001",
+      "categoria": "Utilidades",
+      "quantidade": "2",
+      "preco_custo": "12.96",
+      "preco_venda": "28",
+      "id": "IKjJmzL7Kdg"
+    },
+    {
+      "nome_produto": "Produto teste 342324",
+      "sku": "345",
+      "categoria": "Presentes",
+      "quantidade": "31",
+      "preco_custo": "87",
+      "preco_venda": "100",
+      "id": "3beZhUz4kRg"
+    },
+    {
+      "nome_produto": "Gustavo e Julia",
+      "sku": "<3",
+      "categoria": "Outros",
+      "quantidade": "5",
+      "preco_custo": "5000",
+      "preco_venda": "9000",
+      "id": "G7b4TJpTFHg"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nome_categoria": "Decoração",
+      "slug": "decoracao"
+    },
+    {
+      "id": "2",
+      "nome_categoria": "Utilidades",
+      "slug": "utilidades"
+    },
+    {
+      "id": "3",
+      "nome_categoria": "Cozinha",
+      "slug": "cozinha"
+    },
+    {
+      "id": "4",
+      "nome_categoria": "Organização",
+      "slug": "organizacao"
+    },
+    {
+      "id": "5",
+      "nome_categoria": "Banheiro",
+      "slug": "banheiro"
+    },
+    {
+      "id": "6",
+      "nome_categoria": "Quarto",
+      "slug": "quarto"
+    },
+    {
+      "id": "7",
+      "nome_categoria": "Jardim",
+      "slug": "jardim"
+    },
+    {
+      "id": "8",
+      "nome_categoria": "Iluminação",
+      "slug": "iluminacao"
+    },
+    {
+      "id": "9",
+      "nome_categoria": "Presentes",
+      "slug": "presentes"
+    },
+    {
+      "id": "10",
+      "nome_categoria": "Outros",
+      "slug": "outros"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

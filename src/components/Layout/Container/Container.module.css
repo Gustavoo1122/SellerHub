@@ -12,3 +12,9 @@
         width: 1024px;
     }
 }
+
+@media (min-width: 2000px) {
+    .container{
+        width: 2000px;
+    }
+}
